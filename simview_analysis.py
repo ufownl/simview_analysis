@@ -1,4 +1,4 @@
-#   SimView Analysis
+#   SimView Analysis - Time-diff chart for SimView
 #   Copyright (C) 2024  RangerUFO
 
 #   This program is free software: you can redistribute it and/or modify
