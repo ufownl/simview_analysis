@@ -1,6 +1,6 @@
 # SimView Analysis
 
-**SimView Analysis** uses the telemetry data from the lap comparison analysis page of [SimView](https://www.overtake.gg/downloads/simview.35249/) to draw a time-difference chart.
+**SimView Analysis** uses the telemetry data from the lap comparison analysis page of [SimView](https://www.overtake.gg/downloads/simview.35249/) to draw a time-difference chart. It is open-source and free to use under [GPLv3](https://www.gnu.org/licenses/gpl-3.0.txt).
 
 ## Dependencies
 
