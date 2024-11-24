@@ -36,9 +36,13 @@ def parse_telemetry_v1(raw):
     if version != 1:
         raise RuntimeError("SimView telemetry version mismatch")
     def parse_data(raw):
+        prev_pos = 0
         for i in range(8, len(raw), 17):
             nsp, _, speed, _, _ = struct.unpack_from("<fBfff", buffer=raw, offset=i)
-            yield nsp * track_length, speed
+            pos = nsp * track_length
+            if pos > prev_pos:
+                yield pos, speed
+                prev_pos = pos
     return [(pos, speed)  for pos, speed in parse_data(raw)]
 
 
