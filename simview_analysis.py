@@ -91,7 +91,7 @@ if __name__ == "__main__":
     n = min(len(x) for x, _ in t)
     fig = plt.figure()
     ax0 = fig.add_subplot(111)
-    ax0.set_xlabel("Track Position (km)")
+    ax0.set_xlabel("Track Position (m)")
     ax0.set_ylabel("Velocity (km/h)")
     for i, (x, y) in enumerate(data):
         ax0.plot(x[:n], y[:n], ":", label="lap-%d"%(i+1))
